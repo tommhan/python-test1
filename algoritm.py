@@ -1,4 +1,4 @@
-def count_even(numbers):
+def counter_even(numbers):
     result = 0
     for x in numbers:
         if x % 2 == 0:
@@ -21,6 +21,30 @@ def inversions_1_2(t):
                 inversions.append((value1, value2))
     return len(inversions)
                  
+def samebits_1_3(s):
+    count_0 = 0
+    count_1 = 0
+    print(s)
+    for bit in s:
+        print(bit)
+        if bit == "0":
+            count_0 += 1
+            print(count_0)
+        else:
+            count_1 += 1
+    if count_0 >= count_1:
+        for bit in s:
+            bit = "0"
+    else:
+        for bit in s:
+            bit = "1"
+    print(s)
+    if count_0 <= count_1:
+        return count_0
+    else:
+        return count_1
+
+
 
 
         
